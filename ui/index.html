@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DVRCheck Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>DVRCheck Demo</h1>
+  <label for="ip">IP:Port</label><br>
+  <input id="ip" name="ip"><br>
+  <label for="username">Username</label><br>
+  <input id="username" name="username"><br>
+  <label for="password">Password</label><br>
+  <input id="password" name="password"><br>
+  <br>
+  <button onclick="simplecheck()">Check</button>
+  <br>
+  <hr>
+  <h3>Status:</h3>
+  <div id="spinner" class="spinner display-none"></div>
+  <div id="status" class="display-none"></div>
+  <br>
+  <div id="info" class="display-none">
+    <h3>Device Name: </h3>
+    <div id="name"></div>
+    <h3>Model:</h3>
+    <div id="model"></div>
+    <h3>Serial Number:</h3>
+    <div id="sn"></div>
+    <h3>Firmware Version:</h3>
+    <div id="firmware"></div>
+  </div>
+  <p id="debug"></p>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
